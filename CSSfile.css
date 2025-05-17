@@ -1,0 +1,195 @@
+*{ /*customisation of the fonts*/
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.header{ /*customisation of the page*/
+    min-height: 100vh;
+    width: 100%; 
+    background-color:#ffffff; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 4%; 
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{ /*the size of the logo*/
+    width: 100px; 
+}
+.nav-links{ /*titles text align*/
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px; /*tar-right: jigi l-ispace between it-titles tal-pages*/
+    position: relative;
+}
+.nav-links ul li a{ /*customisation of homepages titles*/
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+}
+.nav-links ul li::after{ /*x'hin tmur fuq it-titles tal-homepages, il-line li jigi tahtom*/
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{ /*taghmila biex il-line ma jigix fuq kolla, jigi biss meta tmur fuqa*/
+    width: 100%;
+}
+
+.hero {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 5%;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 340px;
+      height: 540px;
+      margin-right: 100px;
+      margin-left: 100;
+          }
+
+    .hero-text {
+      max-width: 800px;
+      text-align: justify;
+      margin-left: 20px;
+
+    }
+
+    .hero-text h2 {
+      text-align: center;
+      font-size: 4em;
+      font-weight: 500;
+      max-width: 1000px;
+    }
+
+    .hero-text p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 1px; /* Reduce spacing between paragraphs */
+    }
+
+h1{ /* Genres*/
+    font-size: 30px;
+    font-weight: 600;
+    background: rgb(201, 234, 247);
+    color: #000000;
+    text-align: center;
+}
+
+p{ /*text customisation ta' taht it-title*/
+    color: black; /*paragraph customisation*/
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 60px;
+}
+.work{ /*kif jidhru it-3 stampi */
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+}
+.work-col{
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.work-col img{ /*width of the picture*/
+    width: 98%;
+    display: block;
+}
+
+
+/* Images*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+  transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item input[type="checkbox"] {
+  display: none;
+}
+
+.gallery-item label {
+  cursor: pointer;
+}
+
+.gallery-item .expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+}
+
+.gallery-item input[type="checkbox"]:checked + label + .expanded {
+  display: block;
+}
+
+.gallery-item .expanded img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0px 0;
+}
+.projects-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
